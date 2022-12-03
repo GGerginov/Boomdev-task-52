@@ -15,4 +15,16 @@
       <button class="button">Boom?</button>
     </div>
   </body>
+  <script>
+    document.body.addEventListener('click', function(e) {
+
+      for (let i = 0; i < 5; i++) {
+        let article = document.createElement("article");
+        article.classList.add('message');
+
+        article.innerHTML = "Sample"
+        document.body.appendChild(article);
+      }
+    });
+  </script>
 </html>
